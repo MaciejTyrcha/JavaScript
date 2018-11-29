@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        padding: 15px 20px;
+    }
+
+    button {
+        border: 3px solid black;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        color: black;
+        background-color: transparent;
+        margin: 0 30px 30px 0;
+    }
+
+    .box {
+        float: left;
+        background-color: cadetblue;
+        width: 100px;
+        height: 100px;
+        margin: 0 5px;
+        animation: create 0.5s linear both;
+    }
+
+    @keyframes create {
+        0% {
+            width: 0;
+            height: 0;
+            transform: rotate(0);
+        }
+
+        50% {
+            width: 200px;
+            height: 200px;
+        }
+
+        100% {
+            width: 100px;
+            height: 100px;
+            transform: rotate(3600deg);
+        }
+    }
+</style>
+
+<body>
+    <button class="jq">DawajJQ</button>
+    <button class="js">DawajJS</button>
+    <br>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="addingNewDivs.js"></script>
+
+</body>
+
+</html>
