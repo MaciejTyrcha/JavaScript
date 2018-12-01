@@ -1,0 +1,12 @@
+div {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div p {
+  color: blue;
+  paddding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
