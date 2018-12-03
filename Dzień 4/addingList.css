@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 20px 30px;
+    font-size: 25px;
+}
+
+li {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.big {
+    font-size: 30px;
+}
