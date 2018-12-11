@@ -96,3 +96,14 @@ img {
     opacity: 1;
     transform: translateX(0px);
 }
+
+/* Image in the middle */
+.large-window {
+    height: 640px;
+    background-image: url('images/model2.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 50%;
+    margin-top: 100px;
+}
