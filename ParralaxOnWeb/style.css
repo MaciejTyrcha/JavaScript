@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,10 +28,16 @@ h1 {
 
 img {
     max-width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
 }
 
 /* Parallax */
-
 .bird-box {
     position: relative;
     height: 600px;
@@ -49,8 +56,6 @@ img {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    /* left: 50%; */
-
 }
 
 .fore-bird {
@@ -76,7 +81,7 @@ img {
 
 /* Landing elements */
 .clothes-pics {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 0;
 }
 
@@ -88,7 +93,8 @@ img {
     position: relative;
     opacity: 0;
     transform: translateX(-60px);
-    transition: 2s;
+    transition: all 2s;
+    overflow: hidden;
 
 }
 
@@ -101,9 +107,56 @@ img {
 .large-window {
     height: 640px;
     background-image: url('images/model2.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-text {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.promo-text strong {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.promo-text span {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.promo-text a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: 0.3s linear;
+}
+
+.promo-text a:hover {
+    background-color: #fff;
+    color: black;
 }
